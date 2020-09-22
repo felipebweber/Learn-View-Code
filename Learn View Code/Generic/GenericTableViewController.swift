@@ -18,13 +18,13 @@ class GenericTableViewController<T: GenericTableViewCell<U>, U>: UITableViewCont
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return itens.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let identifier = NSStringFromClass(T.self)
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! T
-        cell.textLabel?.text = "O meu deus que delicia"
+        cell.item = itens[indexPath.row]
         return cell
     }
     
