@@ -11,6 +11,7 @@
 		5522C6F42512A076001F9FE4 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5522C6F32512A076001F9FE4 /* TableController.swift */; };
 		5522C6F62512A501001F9FE4 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5522C6F52512A501001F9FE4 /* TableViewCell.swift */; };
 		5554881F2513ADEF00383597 /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5554881E2513ADEF00383597 /* DataCell.swift */; };
+		558E71C2251BCCD2001AE15F /* LabelAutoSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E71C1251BCCD2001AE15F /* LabelAutoSizeViewController.swift */; };
 		55957FCF25153B85006006DF /* GenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55957FCE25153B85006006DF /* GenericTableViewCell.swift */; };
 		55957FD325153D1E006006DF /* GenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55957FD225153D1E006006DF /* GenericTableViewController.swift */; };
 		55957FD625153F9A006006DF /* TestGenericTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55957FD525153F9A006006DF /* TestGenericTableView.swift */; };
@@ -26,6 +27,7 @@
 		5522C6F32512A076001F9FE4 /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		5522C6F52512A501001F9FE4 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		5554881E2513ADEF00383597 /* DataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
+		558E71C1251BCCD2001AE15F /* LabelAutoSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelAutoSizeViewController.swift; sourceTree = "<group>"; };
 		55957FCE25153B85006006DF /* GenericTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewCell.swift; sourceTree = "<group>"; };
 		55957FD225153D1E006006DF /* GenericTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewController.swift; sourceTree = "<group>"; };
 		55957FD525153F9A006006DF /* TestGenericTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGenericTableView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				55A90B9B250AB0D400A0845E /* LaunchScreen.storyboard */,
 				55A90B9E250AB0D400A0845E /* Info.plist */,
 				55957FD525153F9A006006DF /* TestGenericTableView.swift */,
+				558E71C1251BCCD2001AE15F /* LabelAutoSizeViewController.swift */,
 			);
 			path = "Learn View Code";
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55CCFE7E251035E2008D794A /* TestStackViewViewController.swift in Sources */,
+				558E71C2251BCCD2001AE15F /* LabelAutoSizeViewController.swift in Sources */,
 				5522C6F2251246E5001F9FE4 /* UIView+anchors.swift in Sources */,
 				55A90B91250AB0D400A0845E /* AppDelegate.swift in Sources */,
 				5554881F2513ADEF00383597 /* DataCell.swift in Sources */,
