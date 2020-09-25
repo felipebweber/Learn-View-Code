@@ -15,6 +15,10 @@ class GenericTableViewController<T: GenericTableViewCell<U>, U>: UITableViewCont
         super.viewDidLoad()
         let reuseIdentifier = NSStringFromClass(T.self)
         tableView.register(T.self, forCellReuseIdentifier: reuseIdentifier)
+//        tableView.dataSource = self
+//        tableView.estimatedRowHeight = 100
+//        tableView.rowHeight = UITableView.automaticDimension
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,5 +31,18 @@ class GenericTableViewController<T: GenericTableViewCell<U>, U>: UITableViewCont
         cell.item = itens[indexPath.row]
         return cell
     }
+    
+//    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return UITableView.automaticDimension
+//    }
+//    
+//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return UITableView.automaticDimension
+//        //return 180
+//    }
+//    
+//    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        cell.layoutIfNeeded()
+//    }
     
 }

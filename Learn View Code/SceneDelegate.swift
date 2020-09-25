@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             let navController = UINavigationController()
-            let viewController = LabelAutoSizeViewController()
+            let viewController = TestGenericTableView()
             
             navController.viewControllers = [viewController]
             window.rootViewController = navController
