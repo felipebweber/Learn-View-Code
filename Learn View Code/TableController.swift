@@ -13,6 +13,9 @@ class TableController: UITableViewController {
     private var dataCell = [DataCell]()
     
     override func viewDidLoad() {
+        tableView.rowHeight = 120
+//        tableView.estimatedRowHeight = 100
+//        tableView.rowHeight = UITableView.automaticDimension
         tableView.register(TableViewCell.self, forCellReuseIdentifier: "cell")
         creatDataCell()
     }
@@ -29,8 +32,8 @@ class TableController: UITableViewController {
     
     private func creatDataCell() {
         dataCell.append(DataCell(title: "This is a one title", description: "This is a one description"))
-        dataCell.append(DataCell(title: "This is a second title", description: "This is a second description"))
-        dataCell.append(DataCell(title: "This is a third title", description: "This is a third description"))
+        dataCell.append(DataCell(title: "This is a second title", description: "This is a second description This is a second description This is a second description This is a second description"))
+        dataCell.append(DataCell(title: "This is a third title", description: "This is a third description This is a third description This is a third description This is a third description This is a third description This is a third description This is a third description This is a third description"))
         dataCell.append(DataCell(title: "This is a fourth title", description: "This is a fourth description"))
     }
 }

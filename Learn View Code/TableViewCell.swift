@@ -20,12 +20,18 @@ class TableViewCell: UITableViewCell {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "Avenir-Black", size: 14)
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
+        label.sizeToFit()
         return label
     }()
     
     private let descriptionLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "Avenir-Medium", size: 11)
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
+        label.sizeToFit()
         return label
     }()
     
@@ -33,10 +39,17 @@ class TableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         let stackView = UIStackView(arrangedSubviews: [titleLabel, descriptionLabel])
-        stackView.distribution = .fillEqually
+        stackView.distribution = .fill
         stackView.axis = .vertical
+        //stackView.autoresizesSubviews = false
+        //stackView.autoresizingMask = UIView.AutoresizingMask.flexibleHeight
         addSubview(stackView)
-        stackView.fillSuperview(padding: .init(top: 0.0, left: 4.0, bottom: 0.0, right: 4.0))
+        //stackView.fillSuperview(padding: .init(top: 0.0, left: 4.0, bottom: 0.0, right: 4.0))
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+        stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
+        stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+        stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
     }
     
     required init?(coder: NSCoder) {
